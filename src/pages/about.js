@@ -1,12 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
-import Footer from "../components/footer"
-import Header from "../components/header"
+import Layout from "../components/layout"
 
 const AboutPage = () => {
   return (
-    <div>
-      <Header />
+    <Layout>
       <h1>About Me</h1>
       <p>
         I am a learner developer currently learning about JS, React, and Gatsby
@@ -15,8 +13,7 @@ const AboutPage = () => {
         You can contact me <Link to="/contact">here</Link>, for all your
         developmental needs.
       </p>
-      <Footer />
-    </div>
+    </Layout>
   )
 }
 
