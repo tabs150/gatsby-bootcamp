@@ -7,7 +7,17 @@
 module.exports = {
   siteMetadata: {
     title: "Full-Stack Bootcamp!",
-    author: "Thabiso I. Pheko",
+    author: "Thabiso Pheko",
   },
-  plugins: ["gatsby-plugin-sass"],
+  plugins: [
+    "gatsby-plugin-sass",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "src",
+        path: `${__dirname}/src/`,
+      },
+    },
+    "gatsby-transformer-remark",
+  ],
 }
