@@ -7,7 +7,7 @@
 module.exports = {
   siteMetadata: {
     title: "Full-Stack Bootcamp!",
-    author: "Thabiso Pheko",
+    author: "Thabiso I. Pheko",
   },
   plugins: ["gatsby-plugin-sass"],
 }
